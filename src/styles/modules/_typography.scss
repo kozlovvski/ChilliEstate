@@ -1,9 +1,16 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $fw-b;
+}
+
 .heading {
   font-size: 40px;
   margin: 0 0 10px 0;
 }
 
-.subheading {
+h3 {
+  font-size: 24px;
+}
+
+p {
   font-size: 18px;
-  margin: 0;
 }

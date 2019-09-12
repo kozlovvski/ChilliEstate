@@ -1,0 +1,23 @@
+.realizacje {
+  background-color: $secondary;
+  color: #fff;
+
+  .heading {
+    text-align: center;
+  }
+}
+
+.projekty {
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    &:nth-child(2n) {
+      .projekty__gallery {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+    }
+  }
+}
