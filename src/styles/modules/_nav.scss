@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  align-items: baseline;
+	padding: 15px 20px;
+
+  &__logo {
+    max-width: 150px;
+    height: auto;
+  }
+
+  &__list {
+		padding: 0;
+    margin: 0 0 0 auto;
+    display: flex;
+
+    list-style-type: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    color: $primary;
+    font-weight: $fw-b;
+    text-decoration: none;
+  }
+}
