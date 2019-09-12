@@ -1,10 +1,30 @@
 .o-nas {
   background-color: $primary;
   color: #fff;
+  padding-top: 100px;
+  padding-bottom: 50px;
 
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+  }
+
+  &:before {
+    content: url(../images/o-nas-before.svg);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 101%;
+  }
+
+  &:after {
+    content: url(../images/o-nas-after.svg);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 99%);
+    width: 101%;
   }
 }

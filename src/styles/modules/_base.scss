@@ -18,11 +18,19 @@ ul {
   list-style-type: none;
 }
 
+section {
+  position: relative;
+}
+
 .wrapper {
   width: 100%;
   max-width: 960px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.content {
+  z-index: 2;
 }
 
 .skip-link {
