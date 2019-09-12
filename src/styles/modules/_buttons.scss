@@ -1,0 +1,15 @@
+.button {
+  font-weight: $fw-b;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+
+  &--primary {
+    background-color: $primary;
+    color: #fff;
+  }
+
+  &--secondary {
+    background-color: $secondary;
+    color: #fff;
+  }
+}

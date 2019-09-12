@@ -1,0 +1,23 @@
+.hero {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+
+	color: $primary;
+
+	&__content {
+		p {
+			margin-bottom: 30px;
+		}
+		a {
+			color: #fff;
+			background-color: $primary;
+			font-weight: $fw-b;
+		}
+	}
+
+	&__image {
+		max-width: 350px;
+		margin-left: auto;
+	}
+}

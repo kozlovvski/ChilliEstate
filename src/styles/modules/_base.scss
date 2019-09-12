@@ -1,7 +1,15 @@
-html {
+* {
   box-sizing: border-box;
-  background: #fff;
   font-family: $ff-ss;
+}
+
+a {
+  text-decoration: none;
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 .wrapper {
@@ -9,4 +17,18 @@ html {
   max-width: 960px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -99999px;
+  
+  padding: 10px;
+
+  background: #fff;
+
+  &:focus {
+      left: 0;
+  }
 }

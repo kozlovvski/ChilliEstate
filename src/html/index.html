@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="user-scalable=yes, width=device-width, initial-scale=1.0"
-    />
-    <title>Webpack 4 Boilerplate</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="user-scalable=yes, width=device-width, initial-scale=1.0"
+		/>
+		<title>Webpack 4 Boilerplate</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-  <body>
-    ${require('./blocks/header.html')}
-    <section class="hello">
-      <h1>🏴‍ Ahoy there!</h1>
-      <p>☠️ Everything seems to be working, mate!</p>
-    </section>
+	<body>
+		<a href="#main-content" class="skip-link">Skip to main content</a>
+		${require('./blocks/header.html')}
+		<main id="main-content">
+			<section class="wrapper hero" id="hero">
+				<div class="hero__content">
+					<h1 class="heading">Chcesz wynająć mieszkanie?</h1>
+					<p class="subheading">Chill, my się wszystkim zajmiemy!</p>
+					<a href="#o-nas" class="button button--primary">Dowiedz się więcej</a>
+				</div>
+				<img
+					class="hero__image"
+					src="../images/chilliestate_hero_image.svg"
+					alt=""
+				/>
+			</section>
+			<section class="o-nas" id="o-nas">
+				<div class="wrapper o-nas__container">
+					<div>
+						<h2 class="heading">Jesteśmy ChilliEstate</h2>
+						<p class="subheading">
+							Vestibulum congue lorem eu sem tempor, id hendrerit justo
+							sagittis. Nulla egestas convallis nisl, in suscipit tellus
+							fermentum luctus. Sed sed dictum mi. Cras eget urna ac ante
+							aliquet posuere. Etiam tincidunt tempus turpis. Ut et sapien
+							neque. Morbi non nisi eu est lacinia efﬁcitur. Cras et sapien
+							velit. Etiam lacinia posuere ultricies. Pellentesque a porta
+							ligula. Praesent mi lectus, placerat vitae turpis imperdiet,
+							suscipit aliquam neque.Sed eget metus in urna rutrum rutrum eget
+							eu velit. Vestibulum pretium, ligula sit amet posuere posuere,
+							sapien nulla luctus eros.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <script defer src="main.js"></script>
-  </body>
+		<script defer src="main.js"></script>
+	</body>
 </html>
