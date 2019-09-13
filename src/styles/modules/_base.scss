@@ -3,6 +3,10 @@
   font-family: $ff-ss;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   transition: opacity 0.2s ease-in;
@@ -31,6 +35,11 @@ section {
 
 .content {
   z-index: 2;
+  position: relative;
+}
+
+.decoration {
+  width: 100%;
 }
 
 .skip-link {

@@ -5,6 +5,15 @@
   .heading {
     text-align: center;
   }
+
+  &:before {
+    content: url(../images/projekty-before.svg);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
 }
 
 .projekty {

@@ -1,33 +1,38 @@
 .kontakt {
-  text-align: center;
-  color: $primary;
+	text-align: center;
+	color: $primary;
 
-  p {
-    margin: 0;
-  }
+	p {
+		margin: 0;
+	}
 
-  a {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 30px;
+	a {
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 30px;
 
-    font-size: 24px;
+		font-size: 24px;
 
-    color: $primary;
-  }
+		color: $primary;
+	}
 }
 
 .site-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-  padding: 50px 20px;
+  position: relative;
+	padding-top: 50px;
 
-  color: $primary;
+	color: $primary;
 
-  img {
-    max-width: 150px;
+	&__logo {
+		max-width: 150px;
+  }
+  
+  &__decoration {
+    width: 100%;
   }
 }
