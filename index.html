@@ -1,25 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="user-scalable=yes, width=device-width, initial-scale=1.0"
-    />
-    <title>Webpack 4 Boilerplate</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="user-scalable=yes, width=device-width, initial-scale=1.0"
+        />
+        <title>Webpack 4 Boilerplate</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-  <body>
-    <div>
-    <a href="./">Index</a>
-    <a href="./o-nas.html">O nas</a>
-</div>
-    <section class="hello">
-      <h1>🏴‍ Ahoy there!</h1>
-      <p>☠️ Everything seems to be working, mate!</p>
-    </section>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <header class="site-header">
+  <nav class="nav wrapper">
+    <img src="images/5e4ad6f4491e083e40f25bb46fc7e981.png" alt="" class="nav__logo" />
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link">Menu item 1</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Menu item 2</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Menu item 3</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Menu item 4</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Menu item 5</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-    <script defer src="main.js"></script>
-  </body>
+        <main id="main-content">
+            <section class="wrapper hero" id="hero">
+                <div class="hero__content content">
+                    <h1 class="heading">Chcesz wynająć mieszkanie?</h1>
+                    <p>Chill, my się wszystkim zajmiemy!</p>
+                    <a href="#o-nas" class="button button--primary">Dowiedz się więcej</a>
+                </div>
+                <img
+                    class="hero__image"
+                    src="images/4cbb0a8fcc8dec0c1b6201c9cd6f82a1.svg"
+                    alt=""
+                />
+            </section>
+            <section class="o-nas" id="o-nas">
+                <div class="wrapper o-nas__container">
+                    <div class="content">
+                        <h2 class="heading">Jesteśmy ChilliEstate</h2>
+                        <p>
+                            Vestibulum congue lorem eu sem tempor, id hendrerit justo
+                            sagittis. Nulla egestas convallis nisl, in suscipit tellus
+                            fermentum luctus. Sed sed dictum mi. Cras eget urna ac ante
+                            aliquet posuere. Etiam tincidunt tempus turpis. Ut et sapien
+                            neque. Morbi non nisi eu est lacinia efﬁcitur. Cras et sapien
+                            velit. Etiam lacinia posuere ultricies. Pellentesque a porta
+                            ligula. Praesent mi lectus, placerat vitae turpis imperdiet,
+                            suscipit aliquam neque.Sed eget metus in urna rutrum rutrum eget
+                            eu velit. Vestibulum pretium, ligula sit amet posuere posuere,
+                            sapien nulla luctus eros.
+                        </p>
+                    </div>
+                    <img class="o-nas__image content" src="https://via.placeholder.com/800x600" alt="">
+                </div>
+            </section>
+            <section class="uslugi" id="uslugi">
+                <img class="decoration" src="images/2c309628d7cba36cb92102f4be15da9e.png" alt="">
+                <div class="wrapper">
+                    <h2 class="heading">Lorem ipsum dolor</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, esse?
+                    </p>
+                    <ul class="uslugi__list">
+                        <li class="uslugi__item">
+                            <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
+                            <h3>Darmowe wyszukiwanie sprawdzonego najemcy</h3>
+                            <p>
+                                Zaoszczędzisz pieniądze na prowizji biura nieruchomości, a także
+                                mnóstwo swojego cennego czasu na odbieraniu telefonów, dojazdach
+                                oraz prezentowaniu swojego mieszkania.
+                            </p>
+                        </li>
+                        <li class="uslugi__item">
+                            <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
+                            <h3>Darmowe wyszukiwanie sprawdzonego najemcy</h3>
+                            <p>
+                                Zaoszczędzisz pieniądze na prowizji biura nieruchomości, a także
+                                mnóstwo swojego cennego czasu na odbieraniu telefonów, dojazdach
+                                oraz prezentowaniu swojego mieszkania.
+                            </p>
+                        </li>
+                        <li class="uslugi__item">
+                            <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
+                            <h3>Darmowe wyszukiwanie sprawdzonego najemcy</h3>
+                            <p>
+                                Zaoszczędzisz pieniądze na prowizji biura nieruchomości, a także
+                                mnóstwo swojego cennego czasu na odbieraniu telefonów, dojazdach
+                                oraz prezentowaniu swojego mieszkania.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="realizacje" id="realizacje">
+                <div class="wrapper">
+                        <h2 class="heading content">Nasze realizacje</h2>
+                    <ul class="projekty__container">
+                        <li class="projekty__item">
+                            <div class="projekty__content content">
+                                <h3>ul. Przykładowa 20/243C</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Adipisci nobis exercitationem voluptates voluptatum, dolorem
+                                    cumque eveniet perferendis odit amet aut.
+                                </p>
+                                <p>
+                                    Reprehenderit commodi nesciunt recusandae, at fugiat quisquam
+                                    sequi nisi cumque eligendi qui iure nemo inventore pariatur
+                                    mollitia impedit eum ipsam!
+                                </p>
+                                <p>
+                                    Voluptas sunt temporibus, explicabo iusto doloribus veritatis
+                                    sint vero. Mollitia quis aliquid molestiae quibusdam obcaecati
+                                    totam error. Dolores, ducimus reprehenderit.
+                                </p>
+              </div>
+              <div class="projekty__gallery">placeholder</div>
+            </li>
+            <li class="projekty__item">
+                <div class="projekty__content content">
+                  <h3>ul. Przykładowa 20/243C</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci nobis exercitationem voluptates voluptatum, dolorem
+                    cumque eveniet perferendis odit amet aut.
+                  </p>
+                  <p>
+                    Reprehenderit commodi nesciunt recusandae, at fugiat quisquam
+                    sequi nisi cumque eligendi qui iure nemo inventore pariatur
+                    mollitia impedit eum ipsam!
+                  </p>
+                  <p>
+                    Voluptas sunt temporibus, explicabo iusto doloribus veritatis
+                    sint vero. Mollitia quis aliquid molestiae quibusdam obcaecati
+                    totam error. Dolores, ducimus reprehenderit.
+                  </p>
+                </div>
+                <div class="projekty__gallery">placeholder</div>
+              </li>
+                    </ul>
+                </div>
+      </section>
+      <section class="kontakt" id="kontakt">
+    <img src="images/e497cfc2ab0c8112bc36035000ea4fb8.png" alt="" class="decoration">
+    <div class="wrapper">
+        <h2 class="heading">Zajmiemy się wszystkim za Ciebie!</h2>
+        <p>Skontaktuj się z nami i blablabla</p>
+        <a href="mailto:biuro@chilliestate.pl">biuro@chilliestate.pl</a>
+        <p>lub zadzwoń</p>
+        <a href="tel:+48111111111">+48 111 111 111</a>
+    </div>
+</section>
+<footer class="site-footer">
+    <img class="site-footer__logo" src="images/5e4ad6f4491e083e40f25bb46fc7e981.png" alt="">
+        <p>
+            &copy; 2019
+            <script>
+                new Date().getFullYear() > 2019 &&
+                    document.write("-" + new Date().getFullYear());
+            </script>
+            , ChilliEstate
+        </p>
+        <img class="decoration" src="images/078927427ed2c16928470f23e22de8c8.png" alt="" role="presentation">
+</footer>
+
+        </main>
+
+        <script defer src="main.js"></script>
+    </body>
 </html>
