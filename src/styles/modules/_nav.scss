@@ -1,7 +1,19 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+
+  &--scrolled {
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+    z-index: 3;
+  }
+}
+
 .nav {
   display: flex;
   align-items: baseline;
-	padding: 15px 20px;
+	padding: 15px 20px 25px 20px;
 
   &__logo {
     max-width: 150px;
