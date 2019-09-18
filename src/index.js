@@ -9,3 +9,19 @@ window.addEventListener("scroll", e => {
     header.classList.remove("site-header--scrolled");
   }
 })
+
+window.onload = () => {
+  document.getElementById("menu-button").addEventListener("click", e => {
+    Array.from(document.getElementsByClassName("nav__list")).forEach(elem => {
+      elem.classList.toggle("nav__list--active")
+    })
+  })
+
+  Array.from(document.getElementsByClassName("nav__item")).forEach(elem => {
+    elem.addEventListener("click", e => {
+      Array.from(document.getElementsByClassName("nav__list")).forEach(elem => {
+        elem.classList.remove("nav__list--active")
+      })
+    })
+  })
+}

@@ -13,6 +13,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 40px;
+    text-align: center;
+
+    @media (max-width: 700px) {
+      display: block;
+    }
   }
 
   &__item {
@@ -25,6 +30,16 @@
       justify-content: center;
       align-items: center;
       min-height: 54px;
+    }
+
+    @media (max-width: 700px) {
+      max-width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 3em;
+      }
     }
   }
 }

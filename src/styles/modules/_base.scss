@@ -63,6 +63,12 @@ section {
   width: 1em;
   margin-right: 0.1em;  
 
-  background: url(../images/chilliestate_sygnet.svg) no-repeat;
+  background-image: url(../images/chilliestate_sygnet.svg);
   background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.with-logo--white::before {
+  background-image: url(../images/chilliestate_sygnet_biale.svg);
 }
