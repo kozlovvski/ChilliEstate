@@ -12,27 +12,40 @@
 
     <body>
         <a href="#main-content" class="skip-link">Skip to main content</a>
-        <header class="site-header">
-  <nav class="nav wrapper">
-    <img src="images/5e4ad6f4491e083e40f25bb46fc7e981.png" alt="" class="nav__logo" />
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="#" class="nav__link">Menu item 1</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Menu item 2</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Menu item 3</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Menu item 4</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Menu item 5</a>
-      </li>
-    </ul>
-  </nav>
+        <header id="site-header" class="site-header">
+    <nav class="nav">
+        <div class="nav__container wrapper">
+            <img
+                src="images/5e4ad6f4491e083e40f25bb46fc7e981.png"
+                alt=""
+                class="nav__logo"
+            />
+            <button id="menu-button" class="nav__button" aria-label="Mobile navigation toggle">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                >
+                    <path
+                        d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 78.439H20.682C9.26 78.439 0 87.699 0 99.121c0 11.422 9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 392.197H20.682C9.26 392.197 0 401.456 0 412.879s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"
+                    ></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="nav__list wrapper">
+            <li class="nav__item">
+                <a href="#o-nas" data-for="o-nas" class="nav__link">O nas</a>
+            </li>
+            <li class="nav__item">
+                <a href="#wynajmujacy" data-for="wynajmujacy" class="nav__link">Wynajmujący</a>
+            </li>
+            <li class="nav__item">
+                <a href="#najemca" data-for="najemca" class="nav__link">Najemca</a>
+            </li>
+            <li class="nav__item">
+                <a href="#kontakt" data-for="kontakt" class="nav__link">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
         <main id="main-content">
@@ -49,136 +62,158 @@
                 />
             </section>
             <section class="o-nas" id="o-nas">
-                <div class="wrapper o-nas__container">
-                    <div class="content">
-                        <h2 class="heading">Jesteśmy ChilliEstate</h2>
-                        <p>
-                            Vestibulum congue lorem eu sem tempor, id hendrerit justo
-                            sagittis. Nulla egestas convallis nisl, in suscipit tellus
-                            fermentum luctus. Sed sed dictum mi. Cras eget urna ac ante
-                            aliquet posuere. Etiam tincidunt tempus turpis. Ut et sapien
-                            neque. Morbi non nisi eu est lacinia efﬁcitur. Cras et sapien
-                            velit. Etiam lacinia posuere ultricies. Pellentesque a porta
-                            ligula. Praesent mi lectus, placerat vitae turpis imperdiet,
-                            suscipit aliquam neque.Sed eget metus in urna rutrum rutrum eget
-                            eu velit. Vestibulum pretium, ligula sit amet posuere posuere,
-                            sapien nulla luctus eros.
-                        </p>
-                    </div>
-                    <img class="o-nas__image content" src="https://via.placeholder.com/800x600" alt="">
+                <img class="decoration" src="images/b986ae6665cc295372f6ae9860db825a.svg" alt="" />
+                <div class="wrapper o-nas__container content">
+                    <h2 class="heading">Jesteśmy ChilliEstate</h2>
+                    <p>
+                        Chilli Estate to firma zajmującą się wynajmem i kompleksowym
+                        zarządzaniem nieruchomościami mieszkaniowymi.
+                    </p>
+                    <p>
+                        Nasza spółka tworzona przez specjalistów w branży nieruchomości
+                        obsługuje właścicieli mieszkań w Warszawie zapewniając, poprzez
+                        wypracowaną przez lata sieć kontaktów dostęp do grupy odbiorców na
+                        rynku nieruchomości.
+                    </p>
+                    <p>
+                        Dzięki nam, nasi partnerzy zyskują stały dochód i ogromną
+                        oszczędność czasu. Dlaczego?
+                    </p>
+                    <a href="#wynajmujacy" class="button button--clear-white"
+                        >Dowiedz się więcej</a
+                    >
                 </div>
             </section>
-            <section class="uslugi" id="uslugi">
-                <img class="decoration" src="images/2c309628d7cba36cb92102f4be15da9e.png" alt="">
+            <section class="uslugi" id="wynajmujacy">
+                <img class="decoration" src="images/2c309628d7cba36cb92102f4be15da9e.png" alt="" />
                 <div class="wrapper">
-                    <h2 class="heading">Lorem ipsum dolor</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, esse?
-                    </p>
+                    <h2 class="heading with-logo">Chill - Twój Spokój</h2>
                     <ul class="uslugi__list">
                         <li class="uslugi__item">
                             <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
-                            <h3>Darmowe wyszukiwanie sprawdzonego najemcy</h3>
+                            <h3>Przygotowanie nieruchomości</h3>
                             <p>
-                                Zaoszczędzisz pieniądze na prowizji biura nieruchomości, a także
-                                mnóstwo swojego cennego czasu na odbieraniu telefonów, dojazdach
-                                oraz prezentowaniu swojego mieszkania.
+                                W pełni przeprowadzimy Twoje mieszkanie przez proces
+                                przygotowania do wynajmu - od remontu, doposażenia w potrzebne
+                                dla lokatora rzeczy, sesję zdjęciową po <em>home staging</em>.
                             </p>
                         </li>
                         <li class="uslugi__item">
                             <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
-                            <h3>Darmowe wyszukiwanie sprawdzonego najemcy</h3>
+                            <h3>Poszukiwanie najemcy</h3>
                             <p>
-                                Zaoszczędzisz pieniądze na prowizji biura nieruchomości, a także
-                                mnóstwo swojego cennego czasu na odbieraniu telefonów, dojazdach
-                                oraz prezentowaniu swojego mieszkania.
+                                Dzięki różnorodnym kanałom dotarcia szybko znajdziemy pewnego
+                                najemcę, oszczędzając Twój czas.
                             </p>
                         </li>
                         <li class="uslugi__item">
                             <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
-                            <h3>Darmowe wyszukiwanie sprawdzonego najemcy</h3>
+                            <h3>Bieżąca obsługa lokatora</h3>
                             <p>
-                                Zaoszczędzisz pieniądze na prowizji biura nieruchomości, a także
-                                mnóstwo swojego cennego czasu na odbieraniu telefonów, dojazdach
-                                oraz prezentowaniu swojego mieszkania.
+                                Dokumentacja, protokoły, naprawy, terminowe opłacanie mediów,
+                                rozliczenia, windykacja potencjalnych zaległości - to wszystko
+                                pozostaw nam, zajmującym się tym na co dzień.
                             </p>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="realizacje" id="realizacje">
+            <section class="realizacje">
                 <div class="wrapper">
-                        <h2 class="heading content">Nasze realizacje</h2>
-                    <ul class="projekty__container">
-                        <li class="projekty__item">
-                            <div class="projekty__content content">
-                                <h3>ul. Przykładowa 20/243C</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Adipisci nobis exercitationem voluptates voluptatum, dolorem
-                                    cumque eveniet perferendis odit amet aut.
-                                </p>
-                                <p>
-                                    Reprehenderit commodi nesciunt recusandae, at fugiat quisquam
-                                    sequi nisi cumque eligendi qui iure nemo inventore pariatur
-                                    mollitia impedit eum ipsam!
-                                </p>
-                                <p>
-                                    Voluptas sunt temporibus, explicabo iusto doloribus veritatis
-                                    sint vero. Mollitia quis aliquid molestiae quibusdam obcaecati
-                                    totam error. Dolores, ducimus reprehenderit.
-                                </p>
-              </div>
-              <div class="projekty__gallery">placeholder</div>
-            </li>
-            <li class="projekty__item">
-                <div class="projekty__content content">
-                  <h3>ul. Przykładowa 20/243C</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Adipisci nobis exercitationem voluptates voluptatum, dolorem
-                    cumque eveniet perferendis odit amet aut.
-                  </p>
-                  <p>
-                    Reprehenderit commodi nesciunt recusandae, at fugiat quisquam
-                    sequi nisi cumque eligendi qui iure nemo inventore pariatur
-                    mollitia impedit eum ipsam!
-                  </p>
-                  <p>
-                    Voluptas sunt temporibus, explicabo iusto doloribus veritatis
-                    sint vero. Mollitia quis aliquid molestiae quibusdam obcaecati
-                    totam error. Dolores, ducimus reprehenderit.
-                  </p>
-                </div>
-                <div class="projekty__gallery">placeholder</div>
-              </li>
+                    <h2 class="heading content with-logo with-logo--white">
+                        Estate - Twój zysk
+                    </h2>
+                    <ul class="uslugi__list">
+                        <li class="uslugi__item">
+                            <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
+                            <h3>Zaufaj nam... i&nbsp;zarabiaj!</h3>
+                            <p>
+                                Chilli Estate to spółka o dostępie do dużej grupy najemców, co
+                                oznacza, że wraz z przekazaniem Twojej własności pod naszą
+                                opiekę otrzymujesz pieniądze od zaraz i nie musisz martwić się
+                                pustostanem.
+                            </p>
+                        </li>
+                        <li class="uslugi__item">
+                            <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
+                            <h3>Gwarancja terminowych wpłat</h3>
+                            <p>
+                                Przez 12 miesięcy w roku gwarantujemy stałą wpłatę na Twoje
+                                konto, nawet jeśli wynajmujący spóźni się z zapłatą czynszu do
+                                nas. Dzięki nam nasi partnerzy zyskują pewną i regularną
+                                dodatkową pensję nie poświęcając swojego czasu.
+                            </p>
+                        </li>
+                        <li class="uslugi__item">
+                            <img src="images/d24799feb80e4a3449c12957f8baf1b7.svg" alt="" />
+                            <h3>Ochrona mieszkania</h3>
+                            <p>
+                                Kompleksowa umowa stworzona przez osoby z doświadczeniem w
+                                prawie nieruchomościowym dzięki indywidualnemu dopasowaniu
+                                aneksów do potrzeb Twojego mieszkania gwarantuje pełną ochronę i
+                                bezpieczeństwo.
+                            </p>
+                        </li>
                     </ul>
                 </div>
-      </section>
-      <section class="kontakt" id="kontakt">
-    <img src="images/e497cfc2ab0c8112bc36035000ea4fb8.png" alt="" class="decoration">
+            </section>
+            <section id="najemca" class="najemca">
+                <img src="images/7183165f47a9fdcd198b38bacc007127.png" alt="" class="decoration" />
+                <div class="wrapper najemca__container">
+                    <h2 class="heading">Najemca / Lokator</h2>
+                    <p>
+                        Szukasz pokoju w Warszawie? Nie wiesz jak się odnaleźć w nowym
+                        mieście w gąszczu zalewających Cię ofert?
+                    </p>
+                    <p>
+                        Masz konkretne wymagania co do lokalizacji, otoczenia, odległości od
+                        pracy czy uczelni?
+                    </p>
+                    <p>
+                        Napisz nam czego potrzebujesz! My znajdziemy dla Ciebie idealny
+                        pokój dopasowany do Twoich potrzeb i budżetu, którym dysponujesz. A
+                        może coś co mamy w naszej ofercie przypadło Ci do gustu?
+                    </p>
+                </div>
+            </section>
+        </main>
+        <section class="kontakt" id="kontakt">
+    <img src="images/2c309628d7cba36cb92102f4be15da9e.png" alt="" class="decoration" />
+
     <div class="wrapper">
-        <h2 class="heading">Zajmiemy się wszystkim za Ciebie!</h2>
-        <p>Skontaktuj się z nami i blablabla</p>
+        <h2 class="heading">
+            Dołącz do naszych partnerów i&nbsp;zyskaj chill z&nbsp;Chilli&nbsp;Estate!
+        </h2>
+        <p>Skontaktuj się z nami</p>
+        <a href="https://www.facebook.com/ChilliEstate/"
+            >facebook.com/ChilliEstate</a
+        >
         <a href="mailto:biuro@chilliestate.pl">biuro@chilliestate.pl</a>
         <p>lub zadzwoń</p>
         <a href="tel:+48111111111">+48 111 111 111</a>
     </div>
 </section>
 <footer class="site-footer">
-    <img class="site-footer__logo" src="images/5e4ad6f4491e083e40f25bb46fc7e981.png" alt="">
-        <p>
-            &copy; 2019
-            <script>
-                new Date().getFullYear() > 2019 &&
-                    document.write("-" + new Date().getFullYear());
-            </script>
-            , ChilliEstate
-        </p>
-        <img class="decoration" src="images/078927427ed2c16928470f23e22de8c8.png" alt="" role="presentation">
+    <img
+        class="site-footer__logo"
+        src="images/5e4ad6f4491e083e40f25bb46fc7e981.png"
+        alt=""
+    />
+    <p>
+        &copy; 2019<script>
+            new Date().getFullYear() > 2019 &&
+                document.write("-" + new Date().getFullYear());</script
+        >, ChilliEstate Sp. z o. o. <br />
+        <strong>REGON: </strong>567763839<br />
+        <strong>NIP: </strong>5252796277
+    </p>
+    <img
+        class="decoration"
+        src="images/078927427ed2c16928470f23e22de8c8.png"
+        alt=""
+        role="presentation"
+    />
 </footer>
-
-        </main>
 
         <script defer src="main.js"></script>
     </body>
