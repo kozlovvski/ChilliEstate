@@ -1,5 +1,19 @@
 import 'normalize.css';
 import './styles/style.scss';
+import smoothscroll from "smoothscroll-polyfill";
+
+// Element.scrollIntoView polyfill for Safari
+smoothscroll.polyfill();
+
+document
+  .querySelectorAll("a[data-for]")
+  .forEach(link => {
+    const href = link.getAttribute("href");
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      document.querySelector(href).scrollIntoView({ behavior: "smooth" });
+    });
+  });
 
 window.addEventListener("scroll", e => {
   const header = document.getElementById("site-header");
