@@ -55,3 +55,14 @@ section {
       left: 0;
   }
 }
+
+.with-logo::before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-right: 0.1em;  
+
+  background: url(../images/chilliestate_sygnet.svg) no-repeat;
+  background-size: contain;
+}

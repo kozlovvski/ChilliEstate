@@ -4,6 +4,10 @@
   margin-top: -5px;
   padding-bottom: 100px;
 
+  .decoration {
+    margin-bottom: 50px;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,6 +18,13 @@
   &__item {
     img {
       max-width: 120px;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 54px;
     }
   }
 }

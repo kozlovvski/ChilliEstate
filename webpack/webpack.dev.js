@@ -74,12 +74,6 @@ module.exports = {
       hash: false,
       template: "./" + src_Path + "/html/index.html",
       filename: "index.html"
-    }),
-    new HtmlWebpackPlugin({
-      inject: false,
-      hash: false,
-      template: "./" + src_Path + "/html/o-nas.html",
-      filename: "o-nas.html"
     })
   ]
 };

@@ -4,6 +4,8 @@
   border-radius: 0.3em;
   font-size: 1.2em;
 
+  margin-top: 1em;
+
   &--primary {
     background-color: $primary;
     color: #fff;
@@ -12,5 +14,11 @@
   &--secondary {
     background-color: $secondary;
     color: #fff;
+  }
+
+  &--clear-white {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff
   }
 }
