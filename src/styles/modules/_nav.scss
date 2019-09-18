@@ -78,6 +78,7 @@
       width: 100%;
       bottom: 0;
       transform: translateY(100%);
+      left: 0;
 
       text-align: center;
 
@@ -88,7 +89,8 @@
       }
 		}
 
-		&__item {
+		&__item a {
+      display: block;
       padding: 1em 0;
 		}
 	}
