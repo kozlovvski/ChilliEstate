@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
     <head>
         <meta charset="UTF-8" />
+        <title>ChilliEstate</title>
         <meta
             name="viewport"
             content="user-scalable=yes, width=device-width, initial-scale=1.0"
         />
-        <title>Webpack 4 Boilerplate</title>
+        <meta
+            name="description"
+            content="Chcesz wynająć mieszkanie? Chill, my się wszystkim zajmiemy!"
+        />
+        <link rel="icon" href="images/64cdbd22c4fe6cf9f70018568a1ed23e.png" />
+        <link
+            rel="icon"
+            sizes="192x192"
+            href="images/a186e7c8daf8bab6912801479a072d7d.png"
+        />
+        <meta property="og:url" content="chilliestate.pl" />
+        <meta property="og:title" content="ChilliEstate - " />
+        <meta
+            property="og:description"
+            content="Chcesz wynająć mieszkanie? Chill, my się wszystkim zajmiemy!"
+        />
+        <meta name="twitter:site" content="chilliestate.pl" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:image"
+            content="images/80575a645ea49b4e9a314ae665d37bbb.png"
+        />
+        <meta
+            property="og:image"
+            content="images/80575a645ea49b4e9a314ae665d37bbb.png"
+                    />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+
         <link rel="stylesheet" href="style.css" />
     </head>
 
@@ -52,8 +81,8 @@
             <section class="wrapper hero" id="hero">
                 <div class="hero__content content">
                     <h1 class="heading">Chcesz wynająć mieszkanie?</h1>
-                    <p>Chill, my się wszystkim zajmiemy!</p>
-                    <a href="#o-nas" class="button button--primary">Dowiedz się więcej</a>
+                    <p>Chill, My się wszystkim zajmiemy!</p>
+                    <a href="#o-nas" data-for="o-nas" class="button button--primary">Dowiedz się więcej</a>
                 </div>
                 <img
                     class="hero__image"
@@ -66,7 +95,7 @@
                 <div class="wrapper o-nas__container content">
                     <h2 class="heading">Jesteśmy ChilliEstate</h2>
                     <p>
-                        Chilli Estate to firma zajmującą się wynajmem i kompleksowym
+                        Chilli Estate to firma zajmująca się wynajmem i kompleksowym
                         zarządzaniem nieruchomościami mieszkaniowymi.
                     </p>
                     <p>
@@ -79,7 +108,7 @@
                         Dzięki nam, nasi partnerzy zyskują stały dochód i ogromną
                         oszczędność czasu. Dlaczego?
                     </p>
-                    <a href="#wynajmujacy" class="button button--clear-white"
+                    <a href="#wynajmujacy" data-for="wynajmujacy" class="button button--clear-white"
                         >Dowiedz się więcej</a
                     >
                 </div>
@@ -202,8 +231,7 @@
     <p>
         &copy; 2019<script>
             new Date().getFullYear() > 2019 &&
-                document.write("-" + new Date().getFullYear());</script
-        >, ChilliEstate Sp. z o. o. <br />
+                document.write("-" + new Date().getFullYear());</script>, ChilliEstate Sp. z o. o. <br />
         <strong>REGON: </strong>567763839<br />
         <strong>NIP: </strong>5252796277
     </p>
