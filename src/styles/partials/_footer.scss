@@ -35,8 +35,13 @@
 	color: $primary;
 
 	&__logo {
-		max-width: 150px;
-  }
+		max-width: 300px;
+	}	
+	
+	&__copyright {
+		font-size: 24px;
+		display: block;
+	}
   
   &__decoration {
     width: 100%;
