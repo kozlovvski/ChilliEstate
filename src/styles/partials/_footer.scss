@@ -20,6 +20,21 @@
 	}
 }
 
+.icons {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+
+	a {
+		padding: 0 0.2em;
+	}
+
+	svg {
+		fill: $primary;
+		height: 2em;
+	}
+}
+
 .site-footer {
 	display: flex;
 	flex-direction: column;
